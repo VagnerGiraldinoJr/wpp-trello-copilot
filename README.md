@@ -183,12 +183,6 @@ Clique em **Salvar**.
 
 ---
 
-## Screenshots
-
-> Espaço reservado para prints do painel `/setup` e da extensão em ação. Se quiser adicionar, salve as imagens em `docs/screenshots/` e referencie aqui, por exemplo:
->
-> `![Painel de setup](docs/screenshots/setup-trello.png)`
-
 ## Licença
 
 Veja [LICENSE](LICENSE).
