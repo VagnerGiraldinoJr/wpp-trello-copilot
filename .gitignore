@@ -1,4 +1,4 @@
-/vendor/
+vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -19,12 +19,15 @@ storage/*.key
 .env
 Homestead.yaml
 Homestead.json
-/.vagrant
+.vagrant
 .phpunit.result.cache
 
-/public/build
-/storage/pail
+public/build
+storage/pail
 .env.backup
 .env.production
 .phpactor.json
 auth.json
+
+# SQLite database (created by start.sh/start.bat on first run)
+core/database/database.sqlite

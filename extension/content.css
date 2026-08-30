@@ -1,0 +1,46 @@
+#wtc-floating-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background: #25d366;
+    color: #06231a;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s ease;
+}
+
+#wtc-floating-button:hover {
+    transform: translateY(-2px);
+}
+
+#wtc-floating-button.wtc-active {
+    background: #ef4444;
+    color: #fff;
+}
+
+#wtc-floating-button .wtc-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.7;
+}
+
+#wtc-floating-button.wtc-active .wtc-dot {
+    animation: wtc-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes wtc-pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+}

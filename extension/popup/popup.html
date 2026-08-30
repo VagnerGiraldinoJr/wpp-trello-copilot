@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>WPP Trello Copilot</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="wtc-popup">
+        <header class="wtc-header">
+            <span class="wtc-emoji">🤝</span>
+            <div>
+                <h1>WPP Trello Copilot</h1>
+                <p>WhatsApp Web → Trello, com IA local</p>
+            </div>
+        </header>
+
+        <section class="wtc-status">
+            <div class="wtc-status-row">
+                <span id="wtc-status-dot" class="wtc-dot wtc-dot-unknown"></span>
+                <span id="wtc-status-text">Verificando conexão...</span>
+            </div>
+            <p class="wtc-api-url" id="wtc-api-url"></p>
+        </section>
+
+        <button id="wtc-test-button" class="wtc-button">Testar conexão</button>
+
+        <a class="wtc-link" href="http://localhost:8000/setup" target="_blank" rel="noopener">
+            Abrir painel de configuração →
+        </a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

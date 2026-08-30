@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "WPP Trello Copilot",
+  "version": "0.1.0",
+  "description": "Sincroniza conversas do WhatsApp Web com o Trello usando IA local (Ollama) ou API externa, 100% privacy-first.",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "http://localhost:8000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "WPP Trello Copilot"
+  }
+}
