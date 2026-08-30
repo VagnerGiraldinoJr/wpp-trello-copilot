@@ -1,0 +1,12 @@
+services:
+  app:
+    image: ghcr.io/vagnergiraldinojr/wpp-trello-copilot:latest
+    # Uncomment to build from source instead of pulling the published image:
+    # build: ./core
+    ports:
+      - "8000:8000"
+    volumes:
+      - wpp_data:/var/www/html/database
+
+volumes:
+  wpp_data:

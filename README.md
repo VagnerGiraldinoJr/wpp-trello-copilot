@@ -93,6 +93,20 @@ flowchart LR
 
 ---
 
+## Rodando via Docker (opcional)
+
+Se preferir não instalar PHP/Composer/Node na sua máquina, o backend também está publicado como imagem Docker (aba **Packages** deste repositório, `ghcr.io/vagnergiraldinojr/wpp-trello-copilot`):
+
+```sh
+docker compose up
+```
+
+Isso sobe o backend em `http://localhost:8000`, já com SQLite e migrations rodando automaticamente na inicialização (veja `docker-compose.yml` e `core/Dockerfile`). Pra buildar localmente em vez de puxar a imagem publicada, descomente a linha `build: ./core` no `docker-compose.yml`.
+
+> A extensão de Chrome continua sendo instalada normalmente (ela roda no navegador, não dentro do container) — veja o passo 4 abaixo.
+
+---
+
 ## Passo a passo completo (pt-BR)
 
 Este guia assume que você nunca mexeu no projeto. Siga na ordem — cada passo depende do anterior.
