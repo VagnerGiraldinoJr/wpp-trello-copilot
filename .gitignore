@@ -31,3 +31,6 @@ auth.json
 
 # SQLite database (created by start.sh/start.bat on first run)
 core/database/database.sqlite
+
+# Packaged build artifacts (generated for GitHub Releases)
+/dist
